@@ -14,8 +14,12 @@ app.all("*", function (req, res, next) {
   }
 });
 
+app.get("/get-fruit-list",(req, res) => {
+    const list=["Apple","Banana","Citrus"]
+  res.status(200).send(JSON.stringify(list));
+})
 
-app.post("/get-mock-test-data-user-jack", (req, res) => {
+app.post("/post-mock-test-data-user-jack", (req, res) => {
     const obj={
         "name": "Jack Grealish",
         "gender":"male",
@@ -32,6 +36,7 @@ app.get("/", function (req, res) {
 var server = app.listen(8080, function () {
   var host = server.address().address;
   var port = server.address().port;
+  console.log(JSON.stringify(server.address()))
 
-  console.log("应用实例，访问地址为 http//localhost:8080", host, port);
+  console.log("应用实例，访问地址为 http://localhost:8080", host, port);
 });
