@@ -1,0 +1,17 @@
+{
+  "name": "onrender-test-server",
+  "version": "1.0.0",
+  "description": "provide test mock data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "petro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
